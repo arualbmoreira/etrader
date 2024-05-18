@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List an Item for Trade</title>
+  <!-- Link to your CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>List an Item for Trade</h1>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html">Browse Items</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Item Details</h2>
+      <!-- Item Details Form -->
+      <form action="list-item-process.php" method="post">
+        <label for="item_name">Item Name:</label>
+        <input type="text" id="item_name" name="item_name" required>
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+          <option value="electronics">Electronics</option>
+          <option value="musical_instruments">Musical Instruments</option>
+          <option value="sporting_goods">Sporting Goods</option>
+          <option value="trading_card_games">Trading Card Games</option>
+          <option value="collectibles">Collectibles</option>
+        </select>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image">
+        <input type="submit" value="List Item">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer content -->
+  </footer>
+</body>
+</html>

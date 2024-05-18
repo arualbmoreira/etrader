@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    max-width: 1200px; /* Apply max-width globally */
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto; /* Center the topBar */
+    margin-right: auto; /* Center the topBar */
+    padding: 0 10px; /* Adjust padding */
+}
+
+#siteName {
+    margin-left: auto; /* Center the siteName */
+    margin-right: auto; /* Center the siteName */
+    padding: 0 10px; /* Adjust padding */
+}
+
+#searchBar {
+    display: flex;
+    margin-left: auto; /* Center the searchBar */
+    margin-right: auto; /* Center the searchBar */
+    padding: 0 10px; /* Adjust padding */
+}
+
+#searchSubmit {
+    margin-left: 3px;
+}
+
+#catBar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto; /* Center the catBar */
+    margin-right: auto; /* Center the catBar */
+    padding: 0 10px; /* Adjust padding */
+}
+
+#levelUp {
+    max-width: 60%;
+    width: 60%;
+    margin-left: auto; /* Center the levelUp */
+    margin-right: auto; /* Center the levelUp */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    padding: 0 10px; /* Adjust padding */
+}
+
+.footer-section {
+    display: flex; 
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-section ul li {
+    margin-left: 10px;
+}
+
+.footer-section ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
