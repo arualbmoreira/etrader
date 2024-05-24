@@ -1,20 +1,20 @@
 const express = require('express');
 const mysql = require('mysql');
-
+var cors = require('cors') 
 const app = express();
 
 // Create a connection pool to handle database connections
 const pool = mysql.createPool({
-    host: '127.0.0.1',
+    host: 'localhost',
     user: 'root',
     password: 'password',
-    database: 'etrader',
-    port: 2222
+    database: 'test',
+    port: 3306
 });
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
-
+app.use(cors())
 // Route to handle user login
 app.post('/users', (req, res) => {
     const { username, password } = req.body;

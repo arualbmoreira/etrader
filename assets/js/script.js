@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const password = document.getElementById('password').value;
 
         // Create an object with the username and password
-        const formData = { username, password };
+        const formData = { username, password};
 
         // Send form data to the server for login
-        fetch('http://localhost:2222/etrader/users', { // Update the port number to match your server's port
+        fetch('http://localhost:2222/users', { // Update the port number to match your server's port
             method: 'POST', // Use POST method
             headers: {
                 'Content-Type': 'application/json' // Specify content type as JSON
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Fetch user data from the server
-    fetch('http://localhost:2222/etrader/users')
+    fetch('http://localhost:2222/users')
         .then(response => {
             // Check if the response status is OK (200)
             if (!response.ok) {
